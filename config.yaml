@@ -1,0 +1,36 @@
+#External IP Address of bootstrap server 
+bootstrap_url: http://w.x.y.z
+cluster_name: democluster
+superuser_username: admin
+superuser_password_hash: $6$rounds=656000$kjDsgGk2rd5ad1u0$KbCcv2K0.SVrvE2.DgUAAw3P1viur3cg3/jzqRIhljdza5k53d5SlG5LxLBFF0truo9eX3/HS2AkpsQBjolPd.
+#customer_key in yaml file has been replaced by genconf/license.txt in DC/OS 1.11
+#customer_key: <customer-key>
+exhibitor_storage_backend: static
+master_discovery: static
+ip_detect_public_filename: /home/ec2-user/genconf/ip-detect
+#Below list are non-mandatory and should be internal IP's
+master_list:
+- 10.10.0.221
+public_agent_list:
+- 10.10.0.193
+- 10.10.0.49
+agent_list:
+- 10.10.0.177
+- 10.10.0.192
+- 10.10.0.65
+resolvers:
+- 8.8.4.4
+- 8.8.8.8
+# Choose your security mode: permissive, strict, or disabled
+security: permissive
+# A custom proxy is optional. For details, see the config documentation.
+use_proxy: 'false'
+http_proxy: http://<user>:<pass>@<proxy_host>:<http_proxy_port>
+https_proxy: https://<user>:<pass>@<proxy_host>:<https_proxy_port>
+no_proxy:
+- 'foo.bar.com'
+- '.baz.com'
+# Fault domain entry required for DC/OS Enterprise 1.11+
+fault_domain_enabled: false
+#If IPv6 is disabled in your kernel, you must disable it in the config.yaml
+enable_ipv6: 'false'
