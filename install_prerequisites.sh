@@ -1,6 +1,8 @@
 #!/bin/bash
 # This bash script installs all pre-requisites for installing Mesosphere DCOS Cluster in Advanced mode for CentOS/Redhat Linux
+# Run as normal non-root user
 
+#Install Packages & Modify Settings
 sudo systemctl stop firewalld 
 sudo systemctl disable firewalld 
 sudo yum install -y tar xz unzip curl ipset  wget
@@ -20,5 +22,13 @@ sudo groupadd nogroup
 sudo groupadd docker 
 sudo localectl set-locale LANG=en_US.utf8
 sed -e '/wheel/ s/^#*/#/' -i /etc/sudoers
-echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers   
+echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+#Deploy IP Detect Scripts on all nodes
+mkdir genconf 
+cd genconf 
+echo '#!/bin/sh' > ip-detect 
+echo "curl -fsSL http://169.254.169.254/latest/meta-data/local-ipv4" >> ip-detect 
+chmod +x ip-detect
+#
 sudo reboot
