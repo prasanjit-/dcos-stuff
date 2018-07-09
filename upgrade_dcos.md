@@ -11,7 +11,7 @@ For upgrading the steps are:
 2. Clean up docker volumes if required (optional):
 
 `systemctl stop docker`
-`rm -rf /val/lib/docker/*`
+`rm -rf /var/lib/docker/*`
 `systemctl start docker`
 
 
