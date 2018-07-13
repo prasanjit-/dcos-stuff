@@ -7,3 +7,6 @@ Scripts &amp; Tools Related to Mesosphere DCOS
    
  - [Upgrade Steps](https://github.com/prasanjit-/dcos-stuff/blob/master/upgrade_dcos.md
    "upgrade_dcos.md")
+ 
+ - [Kafka Data Migration](https://github.com/prasanjit-/dcos-stuff/blob/master/kafka_data_migration.md 
+   "kafka_data_migration.md")
