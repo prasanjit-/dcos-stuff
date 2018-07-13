@@ -103,7 +103,7 @@ Above should be emplty at this point.
 These commands will show the new cluster as empty.
 
 
-#Run the Kafka Mirror-maker to Migrate Data
+#**Run the Kafka Mirror-maker to Migrate Data**
 
 Deploy the following json via the cli or dashboard to launch the migrator service:
 
