@@ -57,3 +57,7 @@ curl -XGET 'http://admin:admin@localhost:9200/_count?pretty' -d '
 }
 '
 ```
+
+- Note: 
+. Other json files in this repo are for deploying at Mesosphere. 
+. Please change url of LDAP server at elasticsearch.yml when not using plain docker for deployment. (Like when using mesosphere or      Kubernetes)
