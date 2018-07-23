@@ -1,0 +1,18 @@
+{
+  "service": {
+    "name": "ldap-admin"
+  },
+  "openldap-admin": {
+    "cpus": 0.3,
+    "mem": 512
+  },
+  "networking": {
+    "ldap_location": "ldap-server",
+    "ldap_port": 389,
+    "external_access": {
+      "enable": true,
+      "external_access_port": 11389,
+      "virtual_host": "phpldapadmin.example.org"
+    }
+  }
+}
