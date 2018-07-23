@@ -1,0 +1,38 @@
+{
+  "service": {
+    "name": "ldap-server"
+  },
+  "openldap": {
+    "cpus": 0.3,
+    "mem": 256
+  },
+  "database": {
+    "admin_password": "admin",
+    "domain": "example.org",
+    "organization": "example",
+    "config_password": "admin",
+    "force_reconfigure": false
+  },
+  "storage": {
+    "host_volume": "/tmp",
+    "persistence": {
+      "enable": false,
+      "ldap_volume_size": 256,
+      "slapd_volume_size": 64,
+      "external": {
+        "enable": false,
+        "volume_name": "openldap",
+        "provider": "dvdi",
+        "driver": "rexray"
+      }
+    }
+  },
+  "networking": {
+    "port": 389,
+    "host_mode": false,
+    "external_access": {
+      "enable": false,
+      "external_access_port": 10389
+    }
+  }
+}
