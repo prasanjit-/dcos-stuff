@@ -1,0 +1,8 @@
+admin:
+  cluster: all
+  indices:
+    '*': all
+
+superuser:
+  - "cn=admin,dc=example,dc=org"
+  - "cn=admin,ou=Users,dc=example,dc=org"
