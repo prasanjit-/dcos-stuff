@@ -10,3 +10,5 @@ Scripts &amp; Tools Related to Mesosphere DCOS
  
  - [Kafka Data Migration](https://github.com/prasanjit-/dcos-stuff/blob/master/kafka_data_migration.md 
    "kafka_data_migration.md")
+   
+ - [Elasticsearch-Xpack-LDAP](https://github.com/prasanjit-/dcos-stuff/tree/master/elasticsearch-xpack-ldap)
