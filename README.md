@@ -13,4 +13,4 @@ Scripts &amp; Tools Related to Mesosphere DCOS
    
  - [Elasticsearch-Xpack-LDAP](https://github.com/prasanjit-/dcos-stuff/tree/master/elasticsearch-xpack-ldap)
  
- - [DCOS Shakedown] (https://github.com/prasanjit-/shakedown)
+ - [DCOS Shakedown](https://github.com/prasanjit-/shakedown)
